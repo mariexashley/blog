@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exposing</title>
+
+	<style type="text/css">
+		.blog-title {
+			color: white;
+			font-family: Courier;
+		}
+
+		#page-title {
+			font-family: cursive;
+			color: #f2d9d2;
+			font-size: 40px;
+		}
+
+		.blog-post {
+			background-color: url(https://i.giphy.com/media/6GIr7RO3Wwj60/giphy.webp);
+			border: 3px dashed #d6f9db;
+			border-radius: 60px;
+			margin-bottom: 10px;
+			padding: 20px;
+		}
+
+		img {
+			display: block;
+			margin: auto;
+		}
+
+		#content {
+			 background-color: url(https://i.giphy.com/media/6GIr7RO3Wwj60/giphy.webp);
+			 margin-left: 10%;
+			 margin-right: 10%;
+			 padding: 20px;
+			 border: 5px dotted #f2d9d2; 
+		}
+
+		body {
+			background: url(https://i.giphy.com/media/6GIr7RO3Wwj60/giphy.webp);
+		}
+
+		img {
+			height: 400px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="content">
+		<h1 id="page-title">Behind the Name</h1>
+
+		<div class="blog-post">
+			<h1 class="blog-title">Amanda</h1><button id="sound" onclick="playSound('kiana');"">Play</button>
+			<img src="https://i.imgur.com/k9neiBh.png">
+			<p>Definition: [uh-man-duh]</p>
+			<p>Examples</p>
+			<p>noun</p>
+			<p>A female given name: from a Latin word meaning “beloved.”.</p>
+		</div>
+
+		<div class="blog-post">
+			<h1 class="blog-title">Kiana</h1>
+			<img src="https://i.imgur.com/SzGfxn8.png">
+			<p>Definition: </p>
+			<p>Proper noun</p>
+			<p>A female given name used in the U.S.A. since the 1970s.</p>
+		</div>
+
+		<div class="blog-post">
+			<h1 class="blog-title">Taylor</h1>
+			<img src="https://i.imgur.com/TBORAE7.jpg">
+			<p>Definition:</p>
+			<p>English Meaning:</p>
+			<p>The name Taylor is an English baby name. In English the meaning of the name Taylor is: Tailor. Surname.</p>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+            /**
+             * @param {string} filename The name of the file WITHOUT ending
+             */
+            function playSound(filename){   
+                document.getElementById("sound").innerHTML='<audio autoplay="autoplay"><source src="' + filename + '.m4a" type="audio/m4a" /><source src="' + filename +'.m4a" /></audio>Play';
+            }
+
+        </script>
+</body>
+</html>
